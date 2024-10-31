@@ -1,22 +1,13 @@
-# Sales Data Analysis Project
+# Chick-fil-A Sales Data Analysis
 
-## 1. Introduction:
-The purpose of this project is to analyze sales data from a retail store to identify key trends and patterns. The project involves cleaning the dataset, performing exploratory data analysis (EDA), and extracting insights related to product sales, customer behavior, and revenue.
+## Project Overview
+This project provides insights into Chick-fil-A sales data by cleaning and analyzing the dataset to explore sales patterns, customer behavior, and product performance. Using SQL, I demonstrate data cleaning techniques and conduct exploratory data analysis (EDA) to address various business questions. The insights from this project can support data-driven decisions for improving customer satisfaction and operational efficiency.
 
-## 2. Data Cleaning:
-The sales dataset was cleaned to make it more useful for analysis. This included:
+## Dataset
+The dataset contains:
+- **Sales transactions**: Detailed information on transaction times, product lines, and total amounts.
+- **Customer demographics**: Basic demographic information such as gender and customer type.
+- **Branch and city information**: Identifies the location of each transaction.
+  
+### Project Structure
 
-- Adding a `time_of_day` column to categorize transactions based on the time they occurred (Morning, Afternoon, Evening).
-- Adding a `day_name` column to show the day of the week each transaction took place.
-- Adding a `month_name` column to track transactions by the month.
-
-```sql
-ALTER TABLE sales ADD time_of_day VARCHAR(20) AFTER time;
-
-UPDATE sales
-SET time_of_day = 
-CASE
-    WHEN time >= '00:00:00' AND time < '12:00:00' THEN 'Morning'
-    WHEN time >= '12:00:00' AND time < '18:00:00' THEN 'Afternoon'
-    ELSE 'Evening'
-END;
