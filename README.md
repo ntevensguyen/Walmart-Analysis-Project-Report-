@@ -37,6 +37,6 @@ SET time_of_day =
         WHEN time >= '18:00:00' AND time <= '23:59:59' THEN 'Evening'
     END;
 ```
-##Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 With the cleaned data, I explored questions about sales performance, customer preferences, and product demand. Some examples include:
 
