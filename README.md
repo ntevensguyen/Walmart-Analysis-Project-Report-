@@ -38,5 +38,6 @@ SET time_of_day =
     END;
 ```
 ## Exploratory Data Analysis (EDA)
-With the cleaned data, I explored questions about sales performance, customer preferences, and product demand. Some examples include:
+With the cleaned data, I explored questions about sales performance, customer preferences, and product demand. 
+Some examples include:
 
