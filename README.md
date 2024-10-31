@@ -41,3 +41,13 @@ SET time_of_day =
 With the cleaned data, I explored questions about sales performance, customer preferences, and product demand. 
 Some examples include:
 
+1. Number of sales made in each time of the day per weekday
+```sql
+select time_of_day, day_name, count(*) sales_made
+from sales
+group by time_of_day, day_name
+having day_name not in('Saturday','Sunday')
+order by field(day_name,'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'), 
+field(time_of_day,'Morning', 'Afternoon','Evening')
+;
+```
