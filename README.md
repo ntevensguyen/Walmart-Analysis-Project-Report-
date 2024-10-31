@@ -10,15 +10,22 @@ The dataset contains:
 - **Branch and city information**: Identifies the location of each transaction.
   
 ### Project Structure
-chickfila-sales-analysis/
-├── data/
-│   └── sample_sales_data.csv     # Sample data with select rows
-├── queries/
-│   ├── 01_data_cleaning.sql      # SQL file for data cleaning operations
-│   ├── 02_exploratory_analysis.sql  # SQL file for exploratory data analysis
-├── results/
-│   └── example_output.csv        # Example output for select queries
-└── README.md                     # Project README (this file)
+
+- **data/**: Contains raw or sample data files.
+    - `sample_sales_data.csv`: Sample dataset with select rows to provide a glimpse of the data.
+
+- **queries/**: Holds SQL scripts for different parts of the analysis.
+    - `01_data_cleaning.sql`: Script for cleaning and preparing the data.
+    - `02_exploratory_analysis.sql`: Script for analyzing sales trends, popular items, revenue, etc.
+
+- **results/**: A folder for storing outputs of queries.
+    - `example_output.csv`: Example of output data from a specific query.
+
+- **README.md**: Documentation of the project, including:
+    - Overview of the project and purpose.
+    - Instructions for running the queries.
+    - Descriptions of the data and the queries used in analysis.
+
 
 
 ## Data Cleaning and Preparation
@@ -63,9 +70,7 @@ order by 3 desc
 
 3. Which branch sold more products than average product sold?
 ```sql
-select 
-	branch,
-    sum(quantity)
+select branch, sum(quantity)
 from sales
 group by branch
 having sum(quantity)>(select avg(quantity)from sales)
