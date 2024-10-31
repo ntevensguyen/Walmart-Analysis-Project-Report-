@@ -51,3 +51,23 @@ order by field(day_name,'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'),
 field(time_of_day,'Morning', 'Afternoon','Evening')
 ;
 ```
+
+2. The most common product line by gender
+```sql
+select gender, product_line, count(gender) as total_count
+from sales
+group by gender, product_line
+order by 3 desc
+;
+```
+
+3. Which branch sold more products than average product sold?
+```sql
+select 
+	branch,
+    sum(quantity)
+from sales
+group by branch
+having sum(quantity)>(select avg(quantity)from sales)
+;
+```
