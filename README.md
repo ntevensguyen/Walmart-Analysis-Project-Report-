@@ -10,4 +10,6 @@ The dataset contains:
 - **Branch and city information**: Identifies the location of each transaction.
   
 ### Project Structure
+chickfila-sales-analysis/ ├── data/ │ └── sample_sales_data.csv # Sample data with select rows ├── queries/ │ ├── 01_data_cleaning.sql # SQL file for data cleaning operations │ ├── 02_exploratory_analysis.sql # SQL file for exploratory data analysis ├── results/ │ └── example_output.csv # Example output for select queries └── README.md # Project README (this file)
+
 
