@@ -9,7 +9,7 @@ The dataset contains:
 - **Customer demographics**: Basic demographic information such as gender and customer type.
 - **Branch and city information**: Identifies the location of each transaction.
   
-### Project Structure
+## Project Structure
 chickfila-sales-analysis/
 ├── data/
 │   └── sample_sales_data.csv     # Sample data with select rows
