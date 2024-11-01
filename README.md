@@ -82,7 +82,7 @@ This analysis of Chick-fil-A sales data revealed key insights into customer beha
 Notable findings include:
 
 - **Peak Sales Times:**
--   Afternoon hours show the highest sales, providing guidance for staffing and resource allocation.
+  - Afternoon hours show the highest sales, providing guidance for staffing and resource allocation.
 Customer and Product Trends: Preferences vary by demographic, offering opportunities for targeted promotions.
 Branch Performance: Identifying branches that outperform the average can guide best practices across locations.
 This project refined my SQL skills and demonstrated how structured data analysis can drive smarter business decisions.
