@@ -88,4 +88,6 @@ Notable findings include:
   - Preferences vary by demographic, offering opportunities for targeted promotions.
 - **Branch Performance:**
   - Identifying branches that outperform the average can guide best practices across locations.
+ 
+  
 This project refined my SQL skills and demonstrated how structured data analysis can drive smarter business decisions.
