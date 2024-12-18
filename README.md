@@ -1,7 +1,7 @@
-# Chick-fil-A Sales Data Analysis
+# Walmart Sales Data Analysis
 
 ## Project Overview
-This project provides insights into Chick-fil-A sales data by cleaning and analyzing the dataset to explore sales patterns, customer behavior, and product performance. Using SQL, I demonstrate data cleaning techniques and conduct exploratory data analysis (EDA) to address various business questions. The insights from this project can support data-driven decisions for improving customer satisfaction and operational efficiency.
+This project provides insights into Walmart sales data by cleaning and analyzing the dataset to explore sales patterns, customer behavior, and product performance. Using SQL, I demonstrate data cleaning techniques and conduct exploratory data analysis (EDA) to address various business questions. The insights from this project can support data-driven decisions for improving customer satisfaction and operational efficiency.
 
 ## Dataset
 The dataset contains:
@@ -77,7 +77,7 @@ having sum(quantity)>(select avg(quantity)from sales)
 ;
 ```
 ## Conclusion
-This analysis of Chick-fil-A sales data revealed key insights into customer behavior, product popularity, and sales patterns. Through SQL data cleaning and categorization, I structured raw transaction data to enable clearer trend analysis.
+This analysis of Walmart sales data revealed key insights into customer behavior, product popularity, and sales patterns. Through SQL data cleaning and categorization, I structured raw transaction data to enable clearer trend analysis.
 
 Notable findings include:
 
